@@ -7,7 +7,7 @@ func main() {
 	var input float64
 	fmt.Scanf("%f", &input)
 
-	fmt.Println("The Celsius degree is:", input)
+	fmt.Println("The Fahrenheit degree is:", input)
 	output := ((input - 32) * 5 / 9)
-	fmt.Println("The Fahrenheit degree is:", output)
+	fmt.Println("The Celsius degree is:", output)
 }
