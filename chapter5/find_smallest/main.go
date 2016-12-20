@@ -11,12 +11,19 @@ func main() {
 	}
 
 	smallest := x[0]
-	for i := 1; i < len(x); i++ {
-		if smallest < x[i] {
+	for _, value := range x {
+		if smallest < value {
 			continue
 		} else {
-			smallest = x[i]
+			smallest = value
 		}
+
+		// for i := 1; i < len(x); i++ {
+		// if smallest < x[i] {
+		// continue
+		// } else {
+		// smallest = x[i]
+		// }
 	}
 	fmt.Println("The smallest value is:", smallest)
 }
